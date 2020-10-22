@@ -1,0 +1,30 @@
+{
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase serve --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^8.4.0",
+    "firebase-functions": "^3.2.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/md5": "^2.1.33",
+    "@types/moment": "^2.13.0",
+    "@types/uuid": "^3.4.5",
+    "typescript": "^3.2.2"
+  },
+  "private": true
+}
